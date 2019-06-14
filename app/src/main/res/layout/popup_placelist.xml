@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_style"
+    android:paddingBottom="5dp"
+    android:id="@+id/relLayout_popup"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:id="@+id/tv_lablepopup"
+        android:textColor="#fffaaf"
+        android:textSize="20sp"
+        android:background="@drawable/tv_titlepopup"
+        android:text="Đã tìm thấy..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_below="@id/tv_lablepopup"
+        android:id="@+id/lv_placehadfound"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></ListView>
+    <Button
+        android:id="@+id/btn_dong"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_tron"
+        android:text="Đóng"
+        android:layout_below="@id/lv_placehadfound"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+</RelativeLayout>

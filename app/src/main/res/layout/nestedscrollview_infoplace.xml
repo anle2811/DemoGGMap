@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#014483"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <ImageView
+        android:id="@+id/img_place"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_null_image"
+        android:layout_width="250dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#ffc888"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/img_place"
+        android:gravity="center"
+        android:id="@+id/tv_NamePlace"
+        android:textSize="20sp"
+        android:text="Tên địa điểm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="italic"
+        android:textColor="#ffc888"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_NamePlace"
+        android:id="@+id/tv_AddressPlace"
+        android:textSize="20sp"
+        android:text="Địa chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_AddressPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/btn_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_savePlace"
+            android:text="Lưu"
+            android:layout_width="130dp"
+            android:layout_height="60dp" />
+        <Button
+            android:background="@drawable/btn_style"
+            android:layout_toLeftOf="@id/btn_savePlace"
+            android:id="@+id/btn_moveCameraPlace"
+            android:text="Đi Đến"
+            android:layout_width="130dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
